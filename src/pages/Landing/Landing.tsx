@@ -7,7 +7,7 @@ import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 
 import './Landing.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const Landing = () => {
   return (
@@ -23,24 +23,24 @@ const Landing = () => {
           alt="Plataforma de estudo"
           className="hero-image"
         />
-      <div className="buttons-container">
-        <Link to="/study" className="study">
-          <img src={studytIcon} alt="Estudar"/>
+        <div className="buttons-container">
+          <Link to="/study" className="study">
+            <img src={studytIcon} alt="Estudar"/>
           Estudar
-        </Link>
+          </Link>
 
-        <Link to="/give-classes" className="give-classes">
-          <img src={giveClassesIcon} alt="Dar Aulas"/>
+          <Link to="/give-classes" className="give-classes">
+            <img src={giveClassesIcon} alt="Dar Aulas"/>
           Dar Aulas
-        </Link>
-      </div>
+          </Link>
+        </div>
 
-      <span className="total-connections">
+        <span className="total-connections">
         Total de 200 conexões <img src={purpleHeartIcon} alt="Coração Roxo"/>
-      </span>
+        </span>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Landing;
