@@ -2,39 +2,26 @@ import React from 'react';
 
 import PageHeader from '../../components/PageHeader/PageHeader';
 import TeacherItem from '../../components/TeacherItem/TeacherItem';
+import Input from '../../components/Input/Input';
 
 import './TeacherList.css';
 
-const TeacherList = () => {
-  return (
-    <div id="page-teacher-list" className="container">
-      <PageHeader title="Estes são os Proffys disponíves." >
-        <form id="search-teachers">
-          <div className="input-block">
-            <label htmlFor="subject">Matéria</label>
-            <input type="text" name="" id="subject"/>
-          </div>
+const TeacherList = () => (
+  <div id="page-teacher-list" className="container">
+    <PageHeader title="Estes são os Proffys disponíves.">
+      <form id="search-teachers">
+        <Input name="subject" label="Matéria" />
+        <Input name="week_day" label="Dia da semana" />
+        <Input type="time" name="time" label="Hora" />
+      </form>
+    </PageHeader>
 
-          <div className="input-block">
-            <label htmlFor="week_day">Dia da semana</label>
-            <input type="text" name="" id="week_day"/>
-          </div>
-
-          <div className="input-block">
-            <label htmlFor="time">Hora</label>
-            <input type="text" name="" id="time"/>
-          </div>
-
-        </form>
-      </PageHeader>
-
-      <main>
-        <TeacherItem />
-        <TeacherItem />
-        <TeacherItem />
-      </main>
-    </div>
-  );
-};
+    <main>
+      <TeacherItem />
+      <TeacherItem />
+      {/* <TeacherItem /> */}
+    </main>
+  </div>
+);
 
 export default TeacherList;
