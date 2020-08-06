@@ -37,7 +37,9 @@ module.exports = {
     "react/jsx-filename-extension": [
       1,
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
-    ]
+    ],
+    "react/prop-types": [1, { skipUndeclared: true }],
+    "react/jsx-props-no-spreading": [0]
   },
   "settings": {
     "import/resolver": {
