@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 meus-comandos.sh
 .gitignore
+
+package-lock.json
+yarn.lock
